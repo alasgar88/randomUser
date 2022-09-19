@@ -8,6 +8,7 @@ const socket = new WebSocket("ws://simple-realtime-server.herokuapp.com/");
 
 function App() {
   const { user } = useSelector((store) => store.user);
+  console.log(user);
   const dispatch = useDispatch();
   const assingData = (data) => {
     dispatch(newUser(JSON.parse(data)));
@@ -15,7 +16,9 @@ function App() {
 
   useEffect(() => {
     socket.addEventListener("message", (event) => {
-      assingData(event.data);
+      setTimeout(() => {
+        assingData(event.data);
+      }, 2000);
     });
     socket.onclose = () => {
       socket.close();
