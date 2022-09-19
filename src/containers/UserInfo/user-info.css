@@ -1,0 +1,76 @@
+.userContainer{
+    width:100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    height: 95%;
+    background: #545454;
+}
+
+.userInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    width: 800px;
+    height: 600px;
+    border-radius: 5px
+}
+
+.avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    padding: 5px;
+        background: #EEEEEE;
+}
+.avatar-image{
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 50%;
+}
+.email-birthday-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 65%;
+    padding: 20px 20px;
+    height: 50px;
+    margin-top: 30px;
+    background: #EEEEEE;
+    border-radius: 10px;
+
+}
+
+.email,.birthday{
+    /* background: red; */
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.birthday {
+    width: 20%;
+}
+
+.email-spa,.birthday-span{
+    color: grey;
+    font-size: 20px;
+}
+
+
+
+
