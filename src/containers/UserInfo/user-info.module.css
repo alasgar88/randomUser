@@ -1,0 +1,77 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.containerCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+  height: 95%;
+  background: #545454;
+}
+
+.name {
+    font-size: 24px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  width: 800px;
+  height: 600px;
+  border-radius: 5px;
+}
+
+.avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  padding: 5px;
+  background: #eeeeee;
+}
+
+.avatarImage {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: 50%;
+}
+
+.emailBirthdayContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 65%;
+  padding: 20px 20px;
+  height: 50px;
+  margin-top: 30px;
+  background: #eeeeee;
+  border-radius: 10px;
+}
+
+.field {
+  /* background: red; */
+  width: 70%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+
+.birthday {
+  width: 20%;
+}
+
+.label {
+  color: grey;
+  font-size: 20px;
+}
