@@ -17,15 +17,19 @@ const UserList = () => {
   };
 
   useEffect(() => {
-    const socket = new WebSocket("wss://simple-realtime-server.herokuapp.com/");
+    let socket;
+
     if (checked) {
+      socket = new WebSocket("wss://simple-realtime-server.herokuapp.com/");
       socket.addEventListener("message", assingData);
-      return () => {
-        socket.removeEventListener("message", assingData);
-      };
     } else {
-      socket.close();
+      socket?.close();
     }
+
+    return () => {
+      socket?.removeEventListener("message", assingData);
+      socket?.close();
+    };
   }, [checked]);
 
   return (
