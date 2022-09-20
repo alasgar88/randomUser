@@ -2,9 +2,12 @@ import "./user-info.css";
 import { useSelector } from "react-redux";
 import { findAge } from "../../utils/functions";
 import React from "react";
+import { useParams } from "react-router-dom";
 
 const UserInfo = () => {
-  const { user } = useSelector((store) => store.user);
+  const { userList } = useSelector((store) => store.user);
+  const { id } = useParams();
+  const user = userList.find((user) => user.id === id);
   const userAge = findAge(user?.birthdate);
   return (
     <div className='userContainer'>
